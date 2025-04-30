@@ -1,0 +1,56 @@
+.login-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #dff1ff, #f4faff);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.bg-image {
+  position: absolute;
+  top: -200px;
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  filter: blur(1px);    
+  opacity: 0.9;  
+  border-radius: 8px;
+  animation: floatDown 30s linear infinite;
+}
+
+@keyframes floatDown {
+  0% {
+    top: -200px;
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    top: 110%;
+    opacity: 0.3;
+  }
+}
+
+.login-button {
+  background: white;
+  padding: 16px 32px;
+  font-size: 20px;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1;
+}
