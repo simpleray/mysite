@@ -21,8 +21,8 @@
 .bg-image {
   position: absolute;
   top: -200px;
-  width: 120px;
-  height: 180px;
+  width: 200px;      
+  height: 280px;     
   object-fit: cover;
   filter: blur(1px);    
   opacity: 0.9;  
@@ -53,4 +53,28 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   z-index: 1;
+}
+
+.google-login-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 24px;
+  font-size: 18px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.google-login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.google-login-button .icon {
+  width: 20px;
+  height: 20px;
 }
