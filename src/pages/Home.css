@@ -14,6 +14,24 @@
   border-right: 1px solid #ddd;
 }
 
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 14px;
+  color: #333;
+}
+
 .sidebar h2 {
   font-size: 18px;
   color: #444;
