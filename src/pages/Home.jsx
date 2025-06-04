@@ -51,6 +51,12 @@ function Home({ user }) {
     <div className="home-page">
       {/* 左側のメニューエリア（サイドバー） */}
       <aside className="sidebar">
+        {user && (
+          <div className="user-info">
+            <img src={user.picture} alt="プロフィール" className="user-avatar" />
+            <p className="user-name">{user.name}</p>
+          </div>
+        )}
         <h2>メニュー</h2>
         {/* 完成してないボタン */}
         <button>新規チャット（未完成）</button>
